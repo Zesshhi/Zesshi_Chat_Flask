@@ -5,6 +5,6 @@ Zesshi Chat on Flask with WebSockets
 
 **To Do**
 
-You need to rename ```github.env``` to ```.env``` and add info into that env file with your Secret Key
+You need to rename ```github.env``` to ```.env``` and add info into that env file 
 
 Then you need to start your app ```python app.py```
