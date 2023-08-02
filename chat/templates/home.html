@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="container">
+        <h2 id="home-header">Zesshi Chat 💬</h2>
+        {% if error %}
+            <div class="alert alert-danger" role="alert" id="error">{{ error }}</div>
+        {% endif %}
+        <form method="post" id="chat-widget-home">
+            <div id="name-input">
+                <label for="name">Введите имя</label>
+                <input type="text" id="name" name="name" class='form-control' placeholder="Введите имя"
+                       value="{{ name }}"/>
+            </div>
+            <div>
+                <label for="code" id="code-label">Введите код комнаты</label>
+                <input type="text" id="code" class='form-control' name="code" placeholder="Введите код комнаты"
+                       value="{{ code }}"/>
+            </div>
+            <button type="submit" id="join" name="join" class="btn btn-success">Присоединиться</button>
+            <button type="submit" class="btn btn-primary" id="create" name="create">Создать комнату</button>
+        </form>
+    </div>
+{% endblock %}
